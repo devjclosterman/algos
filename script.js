@@ -2,7 +2,7 @@
 
 const binarySearch = (arr, target) => {
     let left = 0;
-    let right = arr.length - 1;
+    // let right = arr.length - 1;
 
     while(left <= right) {
         let mid = Math.floor((left + right) / 2);
@@ -31,3 +31,11 @@ if (resultIndex !== -1) {
     console.log(`Target ${target} not found in the array`);
 }
 
+function fibnonacci(n) {
+    if(n <= 1) {
+        return n;
+    }else {
+        return fibnonacci(n - 1) + fibnonacci(n - 2);
+    }
+}
+console.log(fibonacci(5)); //Output: 5 (0, 1, 1, 2, 3, 5)
